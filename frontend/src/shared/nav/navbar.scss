@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    background-color: rgb(47, 119, 179);
+    align-items: center;
+
+    &--image {
+
+        padding: 0;
+
+    }
+
+    &--links {
+        width: 65%;
+        padding-left: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &--link {
+        text-decoration: none;
+        color: white;
+        padding: 0;
+    }
+}

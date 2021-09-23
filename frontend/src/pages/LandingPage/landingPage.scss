@@ -1,0 +1,27 @@
+.landingPage {
+    margin-top: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--img {
+        height: 20rem;
+
+
+    }
+
+    &--button {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+
+        &--image {
+            padding: 0.5rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+    }
+}
