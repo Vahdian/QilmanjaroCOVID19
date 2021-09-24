@@ -10,13 +10,14 @@ function expressLoader(app){
         res.header("Access-Control-Allow-Credentials", true);
         res.header("Access-Control-Allow-Headers", "Content-Type");
         res.header("Access-Control-Allow-Origin", true);
+        next();
       });
-      app.use(
-        cors({
-          origin: ["http://localhost:3000", "http://localhost:3001"],
-          credentials: true,
-        })
-      );
+    //   app.use(
+    //     cors({
+    //       origin: ["http://localhost:3000", "http://localhost:3001"],
+    //       credentials: true,
+    //     })
+    //   );
     app.use(routes)
 }
 

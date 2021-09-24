@@ -1,6 +1,6 @@
 const config = {
     server: {
-        port: process.env.PORT || 5555,
+        port: process.env.PORT || 7000,
     },
     db:{
         uri:process.env.DB_URI,

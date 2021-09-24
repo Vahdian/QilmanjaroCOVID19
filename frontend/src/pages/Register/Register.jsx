@@ -1,7 +1,5 @@
 import { useHistory } from "react-router-dom";
-import DayPickerInput from "react-day-picker/DayPickerInput";
 import "react-day-picker/lib/style.css";
-import { Link } from "react-router-dom";
 import { API } from "../../shared/consts/api.const";
 import { useForm } from "react-hook-form";
 import "./register.scss";
@@ -14,7 +12,7 @@ export default function Register() {
   function onSubmit(newUser) {
     API.post("/users", newUser).then((res) => {
       console.log(res);
-      localStorage.setItem("userData", res);
+      localStorage.setItem("userData", JSON.stringify(res.data));
       console.log(localStorage);
       history.push("/datos");
     });
