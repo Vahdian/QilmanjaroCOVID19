@@ -16,14 +16,14 @@ export default function LandingPage() {
         inmunidad de grupo que permitirá poner fin a la pandemia. ¡Muchas
         gracias por <strong>formar parte de la solución!</strong>
       </h3>
-      <Link to="/cita">
+      <Link to="/cita" className="landingPage--cita">
         <button className="landingPage--button">
           <img
             src="https://vacunacovid.catsalut.gencat.cat/inici/resources/078adece1.svg"
             className="landingPage--button--image"
             alt="cita"
           ></img>
-          PIDE TU CITA AQUI
+          <p className="landingPage--cita">PIDE TU CITA AQUI</p>
         </button>
       </Link>
     </div>

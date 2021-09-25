@@ -13,10 +13,16 @@
 
     }
 
+    &--cita {
+        font-weight: 1000;
+        text-decoration: none;
+    }
+
     &--button {
         display: flex;
         align-items: center;
         padding: 1rem;
+
 
         &--image {
             padding: 0.5rem;

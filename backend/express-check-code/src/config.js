@@ -4,6 +4,7 @@ const config = {
     },
     db:{
         uri:process.env.DB_URI,
+        uri2:process.env.DB_URI,
     }
 }
 
